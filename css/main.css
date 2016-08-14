@@ -249,6 +249,8 @@ Navigation Style
   padding: 30px 15px;
 }
 
+
+
     /* ==========================================================================
 Sliders Style
 ========================================================================== */
@@ -348,7 +350,6 @@ Welcome Style
 #welcome {
   padding: 60px 0;
   text-align: center;
-    background-color: black;
 }
 #welcome h2 {
   text-transform: uppercase;
@@ -434,6 +435,15 @@ Portfolio Style
   margin: 0 auto;
   max-width: 650px;
 }
+
+#prices .top-row img {
+   padding-bottom: 15px;
+}
+
+#prices .bottom-row img {
+    padding-top: 15px;
+}
+
 #prices .portfolio-box .portfolio-box-caption {
   display: block;
   position: absolute;
