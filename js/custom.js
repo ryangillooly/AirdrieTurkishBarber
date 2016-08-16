@@ -7,9 +7,7 @@ $(document).ready(function () {
         {
             if (document.documentElement.clientWidth < 992)
             {
-                $(".navbar-fixed-top").removeClass("top-nav-collapse")
-                $(".navbar-fixed-top").removeClass("navbar-default2")
-                $(".navbar-fixed-top").addClass("navbar-default");
+ 
             }
             else
             {

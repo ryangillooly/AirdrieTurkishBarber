@@ -815,6 +815,34 @@ Media Queries Style
   .navbar-default .navbar-nav > li {
     float: none;
   }
+    
+    .navbar-default .nav > li > a:hover,
+.navbar-default .nav > li > a:focus,
+.navbar-default .nav > li > a:active {
+  color: #a3a3a3;
+}
+    
+    .navbar-default .navbar-header img {
+        display: block;
+    }
+    
+    .navbar-default .social-media i {
+  font-size: 22px;
+}
+    
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+  background: transparent;
+  color: #a3a3a3;
+}
+    
+ .navbar-default .nav > li > a {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
   .navbar-default .collapse.in {
     display: block !important;
   }
@@ -846,4 +874,48 @@ Media Queries Style
   #testimonials h5 {
     font-size: 18px;
   }
+}
+
+
+
+
+
+
+
+
+@-webkit-keyframes pulse {
+ 0% {
+ -webkit-transform: scale(1, 1);
+}
+ 50% {
+ -webkit-transform: scale(1.1, 1.1);
+}
+ 100% {
+ -webkit-transform: scale(1, 1);
+};
+}
+
+@keyframes pulse {
+ 0% {
+ transform: scale(1, 1);
+}
+ 50% {
+ transform: scale(1.1, 1.1);
+}
+ 100% {
+transform: scale(1, 1);
+};
+}
+
+#test {
+	background: red;
+	width: 20px;
+	height: 20px;
+	-webkit-animation: pulse 5s linear infinite;
+	animation: pulse 5s linear infinite;
+}
+
+#test:hover {
+	-webkit-animation: none;
+	animation:none;
 }
