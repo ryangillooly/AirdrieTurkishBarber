@@ -5,21 +5,30 @@ $(document).ready(function () {
     (
         function () 
         {
-            if ($(".navbar").offset().top < 35) 
-            {
-                $(".navbar-fixed-top").removeClass("navbar-default")
-                $(".navbar-fixed-top").removeClass("top-nav-collapse")
-                $(".navbar-fixed-top").addClass("navbar-default2");
-            }
-            else
+            if (document.documentElement.clientWidth < 992)
             {
                 $(".navbar-fixed-top").removeClass("top-nav-collapse")
                 $(".navbar-fixed-top").removeClass("navbar-default2")
                 $(".navbar-fixed-top").addClass("navbar-default");
-            
-                if ($(".navbar").offset().top > 1090)
+            }
+            else
+            {
+                if ($(".navbar").offset().top < 35) 
                 {
-                    $(".navbar-fixed-top").addClass("top-nav-collapse");
+                    $(".navbar-fixed-top").removeClass("navbar-default")
+                    $(".navbar-fixed-top").removeClass("top-nav-collapse")
+                    $(".navbar-fixed-top").addClass("navbar-default2");
+                }
+                else
+                {
+                    $(".navbar-fixed-top").removeClass("top-nav-collapse")
+                    $(".navbar-fixed-top").removeClass("navbar-default2")
+                    $(".navbar-fixed-top").addClass("navbar-default");
+            
+                    if ($(".navbar").offset().top > 1090)
+                    {
+                        $(".navbar-fixed-top").addClass("top-nav-collapse");
+                    }
                 }
             }
         } 
