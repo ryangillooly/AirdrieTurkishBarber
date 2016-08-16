@@ -163,7 +163,7 @@ Layout
   background: #fff;
 }
 
-    /* ==========================================================================
+/* ==========================================================================
 Preloader Style
 ========================================================================== */
 .preloader {
@@ -189,7 +189,7 @@ Preloader Style
   display: inline-block;
 }
 
-    /* ==========================================================================
+/* ==========================================================================
 Navigation Style
 ========================================================================== */
 .navbar-default {
@@ -235,6 +235,60 @@ Navigation Style
   color: #a3a3a3;
 }
 
+
+
+
+
+/********************************
+This applies to hide the navbar under 35
+*********************************/
+
+.navbar-default2 {
+  background: transparent;
+  border: none;
+}
+.navbar-default2 .navbar-header {
+  width: 0%;
+  padding-right: 0px;
+}
+.navbar-default2 .nav-wrap {
+  width: 0%;
+}
+.navbar-default2 .nav > li > a {
+  font-size: 0px;
+  color: transparent;
+  font-weight: 0;
+}
+
+.navbar-default2 .nav > li > a:hover,
+.navbar-default2 .nav > li > a:focus,
+.navbar-default2 .nav > li > a:active {
+  color: transparent;
+}
+
+.navbar-default2 .social-media i {
+  font-size: 0px;
+}
+
+.navbar-default2 .navbar-nav > .active > a,
+.navbar-default2 .navbar-nav > .active > a:focus,
+.navbar-default2 .navbar-nav > .active > a:hover {
+  background: transparent;
+  color: transparent;
+}
+
+.navbar-default2 .navbar-header img {
+    display: none;
+}
+
+
+
+
+
+/********************************
+This applies to change the navbar to solid
+*********************************/
+
 .top-nav-collapse {
   background: #24242a;
 }
@@ -251,17 +305,17 @@ Navigation Style
 
 
 
-    /* ==========================================================================
+/* ==========================================================================
 Sliders Style
 ========================================================================== */
 #owl-hero {
   overflow: hidden;
 }
 #owl-hero .item {
-  -moz-background-size: auto;
-  -o-background-size: auto;
-  -webkit-background-size: auto;
-  background-size: auto;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  -webkit-background-size: contain;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }

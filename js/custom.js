@@ -1,13 +1,30 @@
 $(document).ready(function () {
     /***************** Navbar-Collapse ******************/
 
-    $(window).scroll(function () {
-        if ($(".navbar").offset().top > 50) {
-            $(".navbar-fixed-top").addClass("top-nav-collapse");
-        } else {
-            $(".navbar-fixed-top").removeClass("top-nav-collapse");
-        }
-    });
+    $(window).scroll
+    (
+        function () 
+        {
+            if ($(".navbar").offset().top < 35) 
+            {
+                $(".navbar-fixed-top").removeClass("navbar-default")
+                $(".navbar-fixed-top").removeClass("top-nav-collapse")
+                $(".navbar-fixed-top").addClass("navbar-default2");
+            }
+            else
+            {
+                $(".navbar-fixed-top").removeClass("top-nav-collapse")
+                $(".navbar-fixed-top").removeClass("navbar-default2")
+                $(".navbar-fixed-top").addClass("navbar-default");
+            
+                if ($(".navbar").offset().top > 1090)
+                {
+                    $(".navbar-fixed-top").addClass("top-nav-collapse");
+                }
+            }
+        } 
+    );
+    
 
     /***************** Page Scroll ******************/
 
@@ -57,7 +74,7 @@ $(document).ready(function () {
     $("#owl-testi").owlCarousel({
 
         navigation: false, // Show next and prev buttons
-        paginationSpeed: 400,
+        paginationSpeed: 200,
         singleItem: true,
         transitionStyle: "backSlide",
         autoPlay: true
