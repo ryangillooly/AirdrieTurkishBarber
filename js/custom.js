@@ -53,7 +53,7 @@ $(document).ready(function () {
     })
 
     /***************** Owl Carousel ******************/
-
+/*
     $("#owl-hero").owlCarousel({
 
         navigation: true, // Show next and prev buttons
@@ -71,13 +71,13 @@ $(document).ready(function () {
 
     var slideHeight = $(window).height();
 
-    $('#owl-hero .item').css('height', slideHeight);
+    $('#main-image .item').css('height', slideHeight);
 
     $(window).resize(function () {
-        $('#owl-hero .item').css('height', slideHeight);
+        $('#main-image .item').css('height', slideHeight);
     });
     /***************** Owl Carousel Testimonials ******************/
-
+/*
     $("#owl-testi").owlCarousel({
 
         navigation: false, // Show next and prev buttons

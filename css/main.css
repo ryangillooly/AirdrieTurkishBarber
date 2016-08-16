@@ -197,6 +197,12 @@ Navigation Style
   margin-bottom: 0;
   border: none;
 }
+
+.navbar-default .navbar-header img {
+     width: 52px;
+  height: 52px;
+}
+
 .navbar-default .navbar-header {
   width: 28%;
   padding-right: 15px;
@@ -308,10 +314,10 @@ This applies to change the navbar to solid
 /* ==========================================================================
 Sliders Style
 ========================================================================== */
-#owl-hero {
+#main-image {
   overflow: hidden;
 }
-#owl-hero .item {
+#main-image .item {
   -moz-background-size: contain;
   -o-background-size: contain;
   -webkit-background-size: contain;
@@ -319,7 +325,7 @@ Sliders Style
   background-position: center;
   background-repeat: no-repeat;
 }
-#owl-hero .item .caption {
+#main-image .item .caption {
   position: absolute;
   top: 50%;
   margin-top: -104px;
@@ -328,29 +334,29 @@ Sliders Style
   text-align: center;
   z-index: 15;
 }
-#owl-hero .item .caption h1 {
+#main-image .item .caption h1 {
   margin-top: 40px;
   margin-bottom: 50px;
   text-transform: uppercase;
 }
-#owl-hero .item .caption h1 span {
+#main-image .item .caption h1 span {
   font-weight: 700;
 }
-#owl-hero .item .caption h6 {
+#main-image .item .caption h6 {
   color: #fff;
   margin: 0;
 }
-#owl-hero .owl-pagination {
+#main-image .owl-pagination {
   position: absolute;
   display: block;
   text-align: center;
   width: 100%;
   bottom: 5%;
 }
-#owl-hero .owl-pagination .owl-page.active span {
+#main-image .owl-pagination .owl-page.active span {
   background: #fff;
 }
-#owl-hero .owl-pagination .owl-page span {
+#main-image .owl-pagination .owl-page span {
   border: 2px solid #fff;
   border-radius: 50%;
   background: transparent;
@@ -360,20 +366,20 @@ Sliders Style
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-#owl-hero .owl-buttons div {
+#main-image .owl-buttons div {
   background: #fff;
   font-size: 24px;
   color: #a3a3a3;
   opacity: 1;
 }
-#owl-hero .owl-buttons .owl-prev {
+#main-image .owl-buttons .owl-prev {
   left: -60px;
 }
-#owl-hero .owl-buttons .owl-next {
+#main-image .owl-buttons .owl-next {
   right: -60px;
 }
-#owl-hero .owl-buttons .owl-prev,
-#owl-hero .owl-buttons .owl-next {
+#main-image .owl-buttons .owl-prev,
+#main-image .owl-buttons .owl-next {
   position: absolute;
   background: #fff;
   top: 50%;
@@ -390,11 +396,11 @@ Sliders Style
   transition: all 0.3s ease-in-out;
 }
 
-#owl-hero:hover .owl-prev {
+#main-image:hover .owl-prev {
   left: -5px;
 }
 
-#owl-hero:hover .owl-next {
+#main-image:hover .owl-next {
   right: -5px;
 }
 
@@ -848,16 +854,16 @@ Media Queries Style
   }
 
   /*-- Sliders --*/
-  #owl-hero h1 {
+  #main-image h1 {
     font-size: 42px;
   }
-  #owl-hero h6 {
+  #main-image h6 {
     font-size: 16px;
   }
-  #owl-hero .btn {
+  #main-image .btn {
     margin-top: 20px;
   }
-  #owl-hero .owl-buttons {
+  #main-image .owl-buttons {
     display: none;
   }
 
@@ -874,48 +880,4 @@ Media Queries Style
   #testimonials h5 {
     font-size: 18px;
   }
-}
-
-
-
-
-
-
-
-
-@-webkit-keyframes pulse {
- 0% {
- -webkit-transform: scale(1, 1);
-}
- 50% {
- -webkit-transform: scale(1.1, 1.1);
-}
- 100% {
- -webkit-transform: scale(1, 1);
-};
-}
-
-@keyframes pulse {
- 0% {
- transform: scale(1, 1);
-}
- 50% {
- transform: scale(1.1, 1.1);
-}
- 100% {
-transform: scale(1, 1);
-};
-}
-
-#test {
-	background: red;
-	width: 20px;
-	height: 20px;
-	-webkit-animation: pulse 5s linear infinite;
-	animation: pulse 5s linear infinite;
-}
-
-#test:hover {
-	-webkit-animation: none;
-	animation:none;
 }
